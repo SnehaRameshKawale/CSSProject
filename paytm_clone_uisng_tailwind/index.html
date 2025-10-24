@@ -11,9 +11,12 @@
   <title>paytm_clone_uisng_tailwind</title>
 </head>
 
-<body class="h-screen w-screen flex flex-col items-center bg-gray-100">
-  <div class="navbar w-screen bg-white shadow-lg min-h-5 flex items-center justify-between md:justify-center space-x-2 p-4">
-    <div class="flex space-x-4 text-lg"><div class="md:hidden"><i class="fa-solid fa-bars md:hidden"></i></div><img src="img/logo.png" alt="logo_img"></div>
+<body class="h-screen w-screen flex flex-col items-center bg-gray-100 overflow-x-hidden">
+  <div
+    class="navbar w-screen bg-white shadow-lg min-h-5 flex items-center justify-between md:justify-center space-x-2 pt-7 pb-7 sticky top-0">
+    <div class="flex space-x-4 text-lg">
+      <div class="md:hidden"><i class="fa-solid fa-bars md:hidden"></i></div><img src="img/logo.png" alt="logo_img">
+    </div>
     <ul class="hidden md:flex space-x-3 text-sm font-bold">
       <li>Rechrage & Bill</li>
       <li>Ticket Booking</li>
@@ -22,40 +25,153 @@
       <li>Company Details</li>
       <li><i class="fa-solid fa-download pr-1"></i>Download App</li>
     </ul>
-    <div class="bg-blue-950 space-x-2 text-white text-sm font-bold pl-1 pr-4 pb-1 rounded-2xl flex"><i class=" text-2xl fa-regular fa-circle-user pt-1"></i><button>SignIn</button></div>
+    <div class="bg-blue-950 space-x-2 text-white text-sm font-bold pl-1 pr-4 pb-1 rounded-2xl flex"><i
+        class=" text-2xl fa-regular fa-circle-user pt-1"></i><button>SignIn</button></div>
+  </div>
+  <!-- Here Get UPI statement img -->
+  <div class="container flex justify-center mt-4">
+    <img class="rounded-2xl" src="img/get_upi_img.png" alt="">
   </div>
 
   <!-- Now wrappers after the navbar -->
-   <div class="wrapper1 mt-8 flex flex-col xl:flex-row">
+  <div class="wrapper1 mt-8 flex flex-col xl:flex-row">
     <div class="container1 flex flex-col justify-center rounded-2xl bg-white p-3">
       <span class="text-lg font-medium">Recharges &amp; Bill Payments</span>
       <ul class="flex flex-wrap flex-row gap-8 justify-center">
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img src="img/phoneImg.png" alt=""><span class="text-center text-sm font-medium pt-1">Mobile Rechrage</span></li>
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img src="img/DTHImg.png" alt=""><span class="text-center text-sm font-medium pt-1">DTH Rechrage</span></li>
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img src="img/carImg.png" alt=""><span class="text-center text-sm font-medium pt-1">FasTag Rechrage</span></li>
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img src="img/electricity_bill.png" alt=""><span class="text-center text-sm font-medium pt-1">Electricity Bill</span></li>
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img src="img/loan.png" alt=""><span class="text-center text-sm font-medium pt-1">Loan EMI Payment</span></li>
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl xl:hidden"><img src="img/metroRechrageImg.png" alt=""><span class="text-center text-sm font-medium pt-1">Metro Rechrage</span></li>
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl xl:hidden"><img src="img/tollGateImg.png" alt=""><span class="text-center text-sm font-medium pt-1">TollGate Rechrage</span></li>
-        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img src="img/more_products.png" alt=""><span class="text-center text-sm font-medium pt-1">View All Products</span></li>
-        </ul>
+        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img
+            src="img/phoneImg.png" alt=""><span class="text-center text-sm font-medium pt-1">Mobile Rechrage</span></li>
+        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img
+            src="img/DTHImg.png" alt=""><span class="text-center text-sm font-medium pt-1">DTH Rechrage</span></li>
+        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img
+            src="img/carImg.png" alt=""><span class="text-center text-sm font-medium pt-1">FasTag Rechrage</span></li>
+        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img
+            src="img/electricity_bill.png" alt=""><span class="text-center text-sm font-medium pt-1">Electricity
+            Bill</span></li>
+        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img
+            src="img/loan.png" alt=""><span class="text-center text-sm font-medium pt-1">Loan EMI Payment</span></li>
+        <li
+          class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl xl:hidden">
+          <img src="img/metroRechrageImg.png" alt=""><span class="text-center text-sm font-medium pt-1">Metro
+            Rechrage</span>
+        </li>
+        <li
+          class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl xl:hidden">
+          <img src="img/tollGateImg.png" alt=""><span class="text-center text-sm font-medium pt-1">TollGate
+            Rechrage</span>
+        </li>
+        <li class="w-28 h-auto flex flex-col items-center p-4 hover:bg-gray-100 hover:rounded-2xl hover:shadow-2xl"><img
+            src="img/more_products.png" alt=""><span class="text-center text-sm font-medium pt-1">View All
+            Products</span></li>
+      </ul>
     </div>
-    <div class="container2 flex justify-center xl:ml-4 sm:mt-2">
+    <div class="container2 flex justify-center xl:ml-4 mt-2">
       <img class="rounded-2xl" src="img/get_detailed_summary_img.png" alt="">
     </div>
-   </div>
-   <div class="wrapper2 flex space-x-6 mt-8">
-    <div class="container1 flex border-2 rounded-4xl p-2 w-xl bg-blue-500 text-white hover:shadow-2xl hover:shadow-blue-300"><img class="rounded-full h-12 w-12 mr-1" src="img/cashBackImg.png" alt=""><span><b>Do Mobile Recharge </b>and Win &#8377;100 cashback. Promo: TAKEITALL</span><button class="border-2 pl-6 pr-6 text-white  rounded-2xl text-sm">Recharge_Now</button></div>
-    <div class="container1 flex border-2 rounded-4xl p-2 w-xl bg-blue-900 text-white hover:shadow-2xl hover:shadow-blue-300"><img class="rounded-full h-12 w-12 mr-1" src="img/broadBandImg.png" alt=""><span><b>BroadBand Rechrage</b>and Win &#8377;100 cashback. Promo: TAKEITALL</span><button class="border-2 pl-6 pr-6 text-white rounded-2xl text-sm">Pay_Now</button></div>
-   </div>
-   <div class="wrapper3"></div>
-   <div class="wrapper4"></div>
-   <div class="wrapper5"></div>
-   <div class="wrapper6"></div>
-   <div class="wrapper7"></div>
-   <div class="wrapper8"></div>
-   <div class="wrapper9"></div>
-   <div class="wrapper10"></div>
+  </div>
+  <!-- Recharge center -->
+  <div class="wrapper2 space-x-5 mt-8 sm:flex sm:flex-col xl:flex xl:flex-row sm:items-center xl:justify-center">
+    <div class="container1 flex rounded-4xl p-2 bg-blue-500 text-white hover:shadow-2xl hover:shadow-blue-300"><img
+        class="rounded-full h-12 w-12 mr-1" src="img/cashBackImg.png" alt=""><span
+        class="flex flex-wrap items-center max-w-96"><b>Do Mobile Recharge </b><span class="hidden lg:inline">and Win
+          &#8377;100 cashback. Promo: TAKEITALL</span></span><button
+        class="ml-2 border-b border-t border-l border-r text-white border-white  rounded-2xl text-sm pl-3 pr-3">Recharge_Now</button>
+    </div>
+    <div
+      class="container1 mt-2 xl:mt-0 flex rounded-4xl p-2 bg-blue-900 text-white hover:shadow-2xl hover:shadow-blue-300">
+      <img class="rounded-full h-12 w-12 mr-1" src="img/broadBandImg.png" alt=""><span
+        class="flex flex-wrap items-center max-w-96"><b>Do BroadBand Rechrage Now</b><span class="hidden lg:inline">and
+          Win &#8377;100 cashback. Promo: TAKEITALL</span></span><button
+        class="ml-2 border-b border-t border-l border-r text-white rounded-2xl text-sm pl-3 pr-3">Pay_Now</button>
+    </div>
+  </div>
+  <!-- Stickers  -->
+  <div class="wrapper3 flex sm:flex-col xl:flex-row mt-8 space-x-7">
+    <div class="container1"><img class="rounded-2xl hover:shadow-2xl hover:shadow-blue-300" src="img/swipe_left_img.png"
+        alt=""></div>
+    <div class="container2 mt-2 xl:mt-0"><img class="rounded-2xl hover:shadow-2xl hover:shadow-blue-300"
+        src="img/expense_tracking_img.png" alt=""></div>
+    <div class="container3 mt-2 xl:mt-0"><img class="rounded-2xl hover:shadow-2xl hover:shadow-blue-300"
+        src="img/we_do_the_math_img.png" alt=""></div>
+  </div>
+  <!-- Now to go on different pages -->
+  <div class="wrapper4 bg-blue-100 w-screen flex justify-center mt-8">
+    <div class="Insidewrapper4 p-10">
+      <ul class="flex bg-blue-100">
+        <li><img src="img/flightImg.png" alt=""><a href="index.html">Flight</a></li>
+        <li><img src="img/BusImg.png" alt=""><a href="bus.html">Bus</a></li>
+        <li><img src="img/trainimg.png" alt=""><a href="train.html">Trains</a></li>
+        <li><img src="img/intelFlightImg.png" alt=""><a href="intel_flights.html">Intel.Flight</a></li>
+      </ul>
+      <!-- Pages for diff trips -->
+      <div class="rounded-2xl bg-blue-200 p-5">
+        <div class="container1">
+          <input type="radio" name="trip" value="one_way"> One way
+          <input type="radio" name="trip" value="round_trip"> Round Trip
+          <div class="wrapper flex flex-wrap p-2 justify-center">
+            <!-- Trip from -->
+            <div class="mr-5 border-2 rounded-xl border-blue-400 p-2 m-2">
+              <label class="block" for="from">From</label>
+              <select name="from" class="font-bold">
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Goa">Goa</option>
+              </select>
+            </div>
+            <!-- Trip to -->
+            <div class="mr-5 border-2 rounded-xl border-blue-400 p-2 m-2">
+              <label class="block" for="to">To</label>
+              <select name="To" class="font-bold">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+              </select>
+            </div>
+            <!-- Trip from date -->
+            <div class="mr-5 border-2 rounded-xl border-blue-400 p-2 m-2">
+              <label class="block" for="Depart">Depart</label>
+              <input type="date" name="Depart" id="depart" class="font-bold">
+            </div>
+            <!-- Trip to date -->
+            <div class="mr-5 border-2 rounded-xl border-blue-400 p-2 m-2">
+              <label class="block" for="Return">Return</label>
+              <input type="date" name="Return" id="return" class="font-bold">
+            </div>
+            <!-- passanger count -->
+            <div class="mr-5 border-2 rounded-xl border-blue-400 p-2 m-2">
+              <label class="block" for="tot_passanger">Total Passanger</label>
+              <input type="number" placeholder="0" class="font-bold max-w-20">
+            </div>
+            <!-- passanger class -->
+            <div class="mr-5 border-2 rounded-xl border-blue-400 p-2 m-2">
+              <label class="block" for="class">Select class</label>
+              <select name="flight_class" class="font-bold">
+                <option value="Economy">Economy</option>
+                <option value="Preminum Economy">Preminum Economy</option>
+                <option value="Business">Business</option>
+              </select>
+            </div>
+            <button class=" rounded-xl border-none pt-1 pb-1 pl-4 pr-4 m-2 bg-sky-400 font-bold">Search Flight</button>
+          </div>
+        </div>
+        <div class="container2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper5 flex flex-col lg:flex-row bg-white rounded-2xl mt-8">
+    <div class="container1 max-w-xl flex flex-col justify-center  p-6">
+      <div><img src="img/logo.png" alt=""></div>
+      <div class="text-3xl font-bold flex flex-wrap">Pay anyone directly from your <span class="text-sky-600">bank account</span></div>
+      <div class="flex flex-wrap">Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm UPI or Directly from your Bank Account. Plus, send & receive money from anyone.</div>
+    </div>
+    <div class="flex justify-center m-2">
+      <img class="w-80 xl:w-auto" src="img/pay_anyone_directlyImg.png" alt="">
+    </div>
+  </div>
+  <div class="wrapper6"></div>
+  <div class="wrapper7"></div>
+  <div class="wrapper8"></div>
+  <div class="wrapper9"></div>
+  <div class="wrapper10"></div>
 </body>
 
 </html>
